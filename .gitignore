@@ -1,0 +1,12 @@
+# Rahasia
+.env
+
+# Data mentah (berisi ID kanal asli) dan cache model
+data/raw/
+data/cache/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/

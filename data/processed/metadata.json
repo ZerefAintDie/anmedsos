@@ -1,0 +1,86 @@
+{
+  "crawled_at": [
+    "2026-11-19T04:31:14+00:00",
+    "2026-11-19T04:31:20+00:00",
+    "2026-11-19T04:31:27+00:00",
+    "2026-11-19T04:31:31+00:00",
+    "2026-11-19T04:31:34+00:00",
+    "2026-11-19T04:31:37+00:00"
+  ],
+  "video_ids": [
+    "AgyJv2Qelwk",
+    "PLKrSVuT-Dg",
+    "tNmgmwEtoWE",
+    "-5LfRL82Jck",
+    "JMYspR42HFM",
+    "b0fv54xGOwY"
+  ],
+  "n_rows_raw": 13341,
+  "n_comments_clean": 13307,
+  "n_used_for_nlp": 11659,
+  "seed": 42,
+  "min_words_nlp": 3,
+  "sentiment_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "umap_params": {
+    "n_neighbors": 15,
+    "n_components": 5,
+    "min_dist": 0.0,
+    "metric": "cosine",
+    "random_state": 42
+  },
+  "hdbscan_params": {
+    "min_cluster_size": 15,
+    "min_samples": 5,
+    "metric": "euclidean",
+    "cluster_selection_method": "eom",
+    "prediction_data": true
+  },
+  "vectorizer_params": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2
+  },
+  "custom_stopwords": [
+    "just",
+    "like",
+    "really",
+    "video",
+    "thanks",
+    "thank",
+    "dont",
+    "don",
+    "im",
+    "ive",
+    "youre",
+    "lol",
+    "yeah",
+    "gonna",
+    "got",
+    "get",
+    "make",
+    "know",
+    "think",
+    "going",
+    "people",
+    "thing",
+    "things"
+  ],
+  "theme_map": {},
+  "python": "3.14.4",
+  "libraries": {
+    "google-api-python-client": "2.202.0",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "langdetect": "1.0.9",
+    "torch": "2.15.0",
+    "transformers": "5.23.0",
+    "sentence-transformers": "6.3.0",
+    "bertopic": "0.17.4",
+    "umap-learn": "0.6.0",
+    "hdbscan": "0.8.44",
+    "scikit-learn": "1.9.1"
+  }
+}
